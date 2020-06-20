@@ -14,9 +14,9 @@ jobs:
     - name: Install Dokan
       run: choco install dokany
     - run: git clone https://github.com/dokan-dev/dokan-dotnet
-    - run: git clone https://github.com/StevenBonePgh/SevenZipSharp
-    - run: git clone https://github.com/antiufo/Shaman.Dokan.Base
-    - run: git clone https://github.com/adamhathcock/sharpcompress
+#    - run: git clone https://github.com/StevenBonePgh/SevenZipSharp
+    - run: git clone https://github.com/meee1/Shaman.Dokan.Base
+    - run: git clone https://github.com/meee1/sharpcompress
     - name: Add package Shaman.SevenZipSharp
       run: dotnet add Shaman.Dokan.Archive package Shaman.SevenZipSharp --version 1.0.6.3
     - name: Build with dotnet
