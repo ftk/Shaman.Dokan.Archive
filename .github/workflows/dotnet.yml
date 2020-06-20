@@ -12,7 +12,7 @@ jobs:
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
     - name: Install Dokan
-      run: choco install dokan
+      run: choco install dokany
     - name: Build with dotnet
       run: dotnet build --configuration Release
     - uses: actions/upload-artifact@v2
